@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Rock Paper Scissors Lizard Spock</h1>
+        <p>A game of Rock Paper Scissors expanded to have 5 choices.  Make your choice and see if you can beat the computer</p>
+        <a href="tests/spec-runner.html"><button class="btn btn-default">Check out the tests here</button></a>
+      </div>
+    </div>
+    <div class="container" style="margin-bottom: 30px;">
+      <form>
+        <div class="col-md-2 col-md-offset-1">
+          <button name="player1" type="submit" value="rock" class="btn btn-lg btn-danger btn-block"><i class="fa fa-hand-rock-o fa-5x"></i><br>Rock</button>
+        </div>
+        <div class="col-md-2">
+          <button name="player1" type="submit" value="paper" class="btn btn-lg btn-primary btn-block"><i class="fa fa-hand-paper-o fa-5x"></i><br>Paper</button>
+        </div>
+        <div class="col-md-2">
+          <button name="player1" type="submit" value="scissors" class="btn btn-lg btn-warning btn-block"><i class="fa fa-hand-scissors-o fa-5x"></i><br>Scissors</button>
+        </div>
+        <div class="col-md-2">
+          <button name="player1" type="submit" value="lizard" class="btn btn-lg btn-success btn-block"><i class="fa fa-hand-lizard-o fa-5x"></i><br>Lizard</button>
+        </div>
+        <div class="col-md-2">
+          <button name="player1" type="submit" value="spock" class="btn btn-lg btn-info btn-block"><i class="fa fa-hand-spock-o fa-5x"></i><br>Spock</button>
+        </div>
+      </form>
+    </div>
+    <div id="result" class="jumbotron">
+      <div class="container">
+        <h1 id="result"></h1>
+        <h4 id="player-choice"></h4>
+        <h4 id="computer-choice"></h4>
+      </div>
+    </div>
+  </body>
+</html>
